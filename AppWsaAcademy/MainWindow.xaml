@@ -1,0 +1,39 @@
+﻿<Window x:Class="AppWsaAcademy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppWsaAcademy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="101*"/>
+            <RowDefinition Height="318*"/>
+        </Grid.RowDefinitions>
+
+  
+        <StackPanel
+            Orientation="Horizontal"
+            HorizontalAlignment="Center">
+            
+            <Image
+                
+           Source="./Resourses/logo_wsr.jpg"
+                />
+            
+            <TextBlock 
+                Margin="20"
+                FontSize="18pt"
+                FontWeight="Bold"
+                VerticalAlignment="Center"
+            Text="Academy WSR"/>
+        </StackPanel>
+
+        <Frame 
+            Name="FrmMain"
+            Background="AntiqueWhite"
+            Grid.Row="1"
+            Grid.Column="0"/>
+    </Grid>
+</Window>
